@@ -83,7 +83,7 @@ class SampleApp(VehicleApp):
     async def on_get_speed_request_received(self, data_str: str) -> None:
         logger.debug("Data received: %s", data_str)
         logger.info(
-            "SampleApp received message from topic: %s", GET_SPEED_REQUEST_TOPIC
+            "SampleApp1234 received message from topic: %s", GET_SPEED_REQUEST_TOPIC
         )
         logger.info("SampleApp requests current speed from vehicle")
         # Getting current speed from VehicleDataBroker.
@@ -99,7 +99,7 @@ class SampleApp(VehicleApp):
                 {
                     "result": {
                         "status": 0,
-                        "message": f"""Current Speed = {vehicle_speed}""",
+                        "message": f"""Current Speed  = {vehicle_speed}""",
                     },
                 }
             ),
